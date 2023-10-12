@@ -1,0 +1,31 @@
+.title {
+    margin-bottom: 24px;
+
+    color: var(--white);
+
+    white-space: pre-line;
+
+    letter-spacing: unset;
+}
+
+.description {
+    margin-bottom: 32px;
+
+    color: var(--white);
+
+    white-space: pre-line;
+}
+
+.proposal {
+    color: var(--general-color);
+}
+
+@media (max-width: 640px) {
+    .title {
+        letter-spacing: -1.7px;
+    }
+
+    .description {
+        min-height: 3.6em;
+    }
+}

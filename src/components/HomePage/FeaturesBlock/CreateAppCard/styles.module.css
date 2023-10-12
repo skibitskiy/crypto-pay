@@ -1,0 +1,25 @@
+.buttonContainer {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 69px;
+    padding-top: 37px;
+}
+
+.buttonInnerContainer {
+    position: relative;
+}
+
+.cursor {
+    position: absolute;
+    bottom: -22px;
+    right: -12px;
+}
+
+@media (max-width: 640px) {
+    .buttonContainer {
+        margin-bottom: 50px;
+    }
+}

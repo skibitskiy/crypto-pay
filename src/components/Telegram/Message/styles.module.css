@@ -1,0 +1,90 @@
+.container {
+    position: relative;
+
+    padding: 10px 16px;
+
+    background-color: var(--white);
+
+    border-radius: 20px;
+}
+
+.container_part {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.time {
+    position: absolute;
+    bottom: 10px;
+    right: 16px;
+
+    color: var(--dark-40);
+    /* TO-DO SF PRO */
+    font-family: SF Pro, system-ui;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.441px; /* 138.462% */
+    letter-spacing: -0.596px;
+}
+
+.tail {
+    position: absolute;
+    left: -6px;
+    bottom: 0;
+}
+
+.text {
+    position: relative;
+    z-index: 1;
+
+    color: var(--dark);
+    /* TO-DO SF PRO */
+    font-family: SF Pro, system-ui;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.596px;
+
+    white-space: pre;
+}
+
+.content {
+    opacity: 1;
+    transition: opacity .4s linear;
+}
+
+.content_hidden {
+    opacity: 0;
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 6px 24px 6px 10px;
+
+        border-radius: 12px;
+    }
+
+    .container_part {
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+    .text {
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: -0.409px;
+    
+        white-space: pre;
+    }
+
+    .time {
+        font-size: 10px;
+        font-weight: 510;
+        line-height: 14px;
+        letter-spacing: -0.409px;
+
+        bottom: 7px;
+        right: 12px;
+    }
+}
+

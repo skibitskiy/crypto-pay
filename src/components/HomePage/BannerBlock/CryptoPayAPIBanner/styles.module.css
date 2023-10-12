@@ -1,0 +1,59 @@
+.container {
+    background: var(--gradient-blue);
+
+    border-radius: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info {
+    padding-left: 80px;
+}
+
+.title, .description {
+    color: var(--white);
+
+    margin-bottom: 32px;
+
+    white-space: pre;
+}
+
+.backgroundImage {
+    background-image: url('/API-block_desktop-image.png');
+    width: 712px;
+    height: 550px;
+}
+
+@media (max-width: 640px) {
+    .container {
+        display: block;
+        border-radius: 24px;
+        position: relative;
+
+        height: 514px;
+    }
+
+    .backgroundImage {
+        background-image: url('/API-block_touch-image.png');
+        width: 335px;
+        height: 322px;
+    }
+
+    .info {
+        padding-left: 0;
+        position: absolute;
+        bottom: 32px;
+        left: 32px;
+        right: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title, .description {
+        margin-bottom: 24px;
+
+        white-space: normal;
+    }
+}

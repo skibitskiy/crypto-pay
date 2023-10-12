@@ -1,0 +1,81 @@
+.backgroundContainer {
+    background-color: var(--card-background-color);
+}
+
+.layout {
+    padding: 120px 0;
+
+    align-items: center;
+
+    grid-gap: 40px 20px;
+}
+
+.title {
+    grid-column: 1 / 13;
+
+    justify-self: center;
+}
+
+.leftColumn {
+    grid-column: 1 / 7;
+}
+
+.rightColumn {
+    grid-column: 7 / 13;
+}
+
+.apiStep {
+    grid-row: 3;
+    justify-self: right;
+}
+
+.card {
+    border-radius: 40px;
+    height: 488px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.purpleCard {
+    background: var(--bg-purple);
+}
+
+.blueCard {
+    background: var(--bg-blue);
+}
+
+.yellowCard {
+    background: var(--bg-yellow);
+}
+
+@media (max-width: 640px) {
+    .layout {
+        padding: 32px 0;
+    }
+
+    .title, .leftColumn, .rightColumn {
+        grid-column: 1 / 7;
+    }
+
+    .authCard {
+        grid-row: 2;
+    }
+
+    .authStep {
+        grid-row: 3;
+    }
+
+    .apiStep {
+        grid-row: 5;
+    }
+
+    .updatesStep {
+        grid-row: 7;
+    }
+
+    .card {
+        height: 277px;
+    }
+}

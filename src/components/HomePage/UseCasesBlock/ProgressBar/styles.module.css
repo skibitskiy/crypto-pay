@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.linesContainer {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    height: 100%;
+}
+
+.line {
+    flex-grow: 1;
+
+    background-color: rgb(88, 88, 92);
+
+    width: 4px;
+
+    border-radius: 90px;
+}
+
+.activeLine {
+    background-color: var(--general-color);
+
+}
+
+.digit {
+    color: var(--white);
+}
+
+@media (max-width: 640px) {
+    .linesContainer {
+        flex-direction: row;
+        flex-grow: 1;
+        align-items: center
+    }
+
+    .line {
+        height: 4px;
+    }
+}

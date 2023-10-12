@@ -1,0 +1,43 @@
+.container {
+    position: relative;
+    overflow: hidden;
+
+    padding: 18px 39px;
+    background: var(--blue-gradient-background-color);
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.container:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+
+    transition: opacity 0.2s linear;
+}
+
+.container.active:after {
+    opacity: 1;
+}
+
+:global([data-theme='LIGHT']) .active:after {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+:global([data-theme='DARK']) .active:after {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.text {
+    position: relative;
+    z-index: 1;
+    
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 120%;
+}

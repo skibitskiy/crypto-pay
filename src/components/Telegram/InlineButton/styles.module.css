@@ -1,0 +1,57 @@
+.container {
+    position: relative;
+    padding: 16px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition-property: background-color, background;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+}
+
+.container .dot {
+    opacity: 0;
+
+    transition: opacity .2s linear;
+}
+
+.container.active .dot {
+    opacity: 1;
+}
+
+.last {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.content {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: SF Pro, system-ui;
+
+    color: var(--white);
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 10px 0;
+        border-radius: 6px;
+    }
+
+    .last {
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
+    .content {
+        font-size: 13px;
+        font-weight: 510;
+        line-height: 13px;
+    }
+}

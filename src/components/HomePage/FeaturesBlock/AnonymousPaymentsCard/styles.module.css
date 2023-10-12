@@ -1,0 +1,36 @@
+.messagesBackground {
+    position: relative;
+
+    border-radius: 32px;
+    background: var(--gradient-blue);
+
+    margin-bottom: 20px;
+    height: 222px;
+    width: 404px;
+}
+
+.messagesContainer {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.message {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 640px) {
+    .messagesBackground {
+        width: auto;
+        height: 130px;
+        margin-bottom: 24px;
+        border-radius: 16px;
+    }
+
+    .messagesContainer {
+        transform: translateX(-50%) scale(0.8);
+    }
+}

@@ -1,0 +1,11 @@
+.code_blue {
+    color: var(--code-blue);
+}
+
+.code_orange {
+    color: var(--code-orange);
+}
+
+.code_yellow {
+    color: var(--code-yellow);
+}

@@ -1,0 +1,61 @@
+.container {
+    padding-top: 0;
+}
+
+.iphoneContainer {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 24px;
+}
+
+.imageContainer {
+    position: relative;
+}
+
+.messagesContainer {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: center;
+
+    height: 139px;
+    width: 398px;
+}
+
+.message {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.iphoneBottom {
+    height: 352px;
+    width: 474px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+:global([data-theme='LIGHT']) .iphoneBottom {
+    background-image: url('/iphone-light-bottom-mock.png');
+}
+
+:global([data-theme='DARK']) .iphoneBottom {
+    background-image: url('/iphone-dark-bottom-mock.png');
+}
+
+@media (max-width: 640px) {
+    .container {
+        overflow: hidden;
+    }
+
+    .iphoneContainer {
+        transform: scale(0.55) translateY(-45%);
+        height: 194px;
+    }
+}

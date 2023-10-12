@@ -1,0 +1,73 @@
+.currenciesContainer {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 16px;
+}
+
+.messageContainer {
+    position: relative;
+
+    border-radius: 24px;
+
+    height: 526px;
+
+    margin-bottom: 24px;
+
+    background-image: url('/stats-message-bg.png');
+}
+
+.title {
+    color: var(--dark);
+
+    font-size: 42px;
+    font-weight: 629;
+    line-height: 110%;
+    letter-spacing: -1.26px;
+
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    color: var(--dark-80, rgba(17, 17, 17, 0.80));
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.highlited {
+    color: var(--general-color);
+}
+
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 431px;
+
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 640px) {
+    .message {
+        width: fit-content;
+
+        transform: scale(0.8) translate(-15%, -15%);
+
+        position: static;
+        top: 0;
+        left: 0;
+    }
+
+    .messageContainer {
+        padding: 24px 20px;
+
+        height: 281px;
+        box-sizing: border-box;
+
+        border-radius: 16px;
+    }
+}
+

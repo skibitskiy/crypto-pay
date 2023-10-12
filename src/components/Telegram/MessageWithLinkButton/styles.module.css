@@ -1,0 +1,9 @@
+.arrow {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+}
+
+.linkButton {
+    background-color: var(--silver-blue);
+}

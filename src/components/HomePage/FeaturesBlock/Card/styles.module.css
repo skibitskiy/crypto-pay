@@ -1,0 +1,27 @@
+.container {
+    padding: 42px 56px;
+
+    background-color: var(--card-background-color);
+
+    border-radius: 40px;
+}
+
+.title {
+    margin-bottom: 20px;
+
+    white-space: pre-line;
+}
+
+.description {
+    color: var(--description-color);
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 32px;
+    }
+
+    .title {
+        margin-bottom: 16px;
+    }
+}

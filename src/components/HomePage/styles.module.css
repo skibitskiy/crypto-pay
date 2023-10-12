@@ -1,0 +1,23 @@
+.scrollContainer {
+    height: 100vh;
+    overflow: scroll;
+}
+
+.developerBlock {
+    position: relative;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    margin-bottom: -40px;
+
+    background-color: var(--whole-background-color);
+}
+
+@media (max-width: 640px) {
+    .developerBlock {
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+
+        margin-bottom: -24px;
+    }
+}

@@ -1,0 +1,29 @@
+.container {
+    border: 0;
+    background: transparent;
+
+    width: 40px;
+    height: 40px;
+
+    transition: background-image .2s linear;
+
+    cursor: pointer;
+}
+
+.light {
+    background-image: url('/light-desktop.png');
+}
+
+.dark {
+    background-image: url('/dark-desktop.png');
+}
+
+@media (max-width: 640px) {
+    .light {
+        background-image: url('/light-touch.png');
+    }
+    
+    .dark {
+        background-image: url('/dark-touch.png');
+    }
+}

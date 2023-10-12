@@ -1,0 +1,19 @@
+.currenciesContainer {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 16px;
+}
+
+.currenciesInnerContainer {
+    position: relative;
+    display: flex;
+}
+
+@media (max-width: 640px) {
+    .currenciesContainer {
+        transform: scale(0.7);
+    }
+}

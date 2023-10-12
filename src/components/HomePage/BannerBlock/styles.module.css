@@ -1,0 +1,17 @@
+.layout {
+    padding: 120px 0;
+}
+
+.banner {
+    grid-column: 1 / 13;
+}
+
+@media (max-width: 640px) {
+    .layout {
+        padding: 80px 0;
+    }
+    
+    .banner {
+        grid-column: 1 / 7;
+    }
+}

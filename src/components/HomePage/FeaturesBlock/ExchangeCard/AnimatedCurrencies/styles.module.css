@@ -1,0 +1,57 @@
+.animatedCurrenciesContainer {
+    position: relative;
+    display: flex;
+
+    height: 104px;
+
+    width: 172px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+
+    align-items: center;
+
+    height: 104px;
+}
+
+.icon {
+    width: 104px;
+    height: 104px;
+    position: relative;
+
+    background: var(--whole-background-color);
+    border-radius: 100%;
+}
+
+.positionedIcon {
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    top: 4px;
+    /* bottom: 0; */
+    left: 4px;
+    /* right: 0; */
+}
+
+.exchange {
+    border-radius: 19px;
+    border: 1px solid var(--white);
+    background: var(--white-60);
+    backdrop-filter: blur(8px);
+    display: inline-flex;
+    padding: 1px 11px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2;
+
+    margin: 0 -20px;
+}
+
+.bottomArrow {
+    display: flex;
+    transform: rotate(180deg);
+}
