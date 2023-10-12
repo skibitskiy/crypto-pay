@@ -11,19 +11,19 @@
 }
 
 .light {
-    background-image: url('/light-desktop.png');
+    background-image: url('/light-desktop.svg');
 }
 
 .dark {
-    background-image: url('/dark-desktop.png');
+    background-image: url('/dark-desktop.svg');
 }
 
 @media (max-width: 640px) {
     .light {
-        background-image: url('/light-touch.png');
+        background-image: url('/light-touch.svg');
     }
     
     .dark {
-        background-image: url('/dark-touch.png');
+        background-image: url('/dark-touch.svg');
     }
 }
